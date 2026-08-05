@@ -1,24 +1,5 @@
 // Wrap in an IIFE to avoid global variable collisions with Home.js
 (() => {
-  // Hamburger Menu Toggle
-  const hamburger = document.getElementById("hamburger");
-  const navTabs = document.getElementById("navTabs");
-
-  if (hamburger && navTabs) {
-    hamburger.onclick = () => {
-      hamburger.classList.toggle("active");
-      navTabs.classList.toggle("active");
-    };
-
-    const navLinks = navTabs.querySelectorAll("a");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navTabs.classList.remove("active");
-      });
-    });
-  }
-
   // Dynamic Content Synchronization with Super Admin Data
   function renderDynamicAdmissionData() {
     if (typeof getSiteData !== "function") return;
