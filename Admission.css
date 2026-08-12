@@ -633,12 +633,13 @@ html::-webkit-scrollbar {
   .Tabs.active {
     max-height: 400px;
     padding: 15px 0;
+    /* display: block; */
   }
 
   .Tabs a {
     padding: 12px 25px;
     text-align: left;
-    width: 100%;
+    /* width: 100%; */
     border-bottom: 1px solid #f0f0f0;
   }
 }
